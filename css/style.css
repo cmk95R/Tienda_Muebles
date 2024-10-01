@@ -83,7 +83,7 @@ img{
 /*Hero Omage*/
 
 .hero {
-    background-image: url(/Ecommerce/img/principal.jpg);
+    background-image: url(/img/principal.jpg);
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;;

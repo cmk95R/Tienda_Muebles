@@ -35,27 +35,26 @@
         <fieldset>
             <legend>Tus Datos</legend>
             <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input id="nombre" type="text" placeholder="Ingresa tu nombre" required>
+                <label  for="nombre">Nombre:</label>
+                <input class="data"id="nombre" type="text" placeholder="Ingresa tu nombre" required>
             </div>
             <div class="campo">
-                <label for="asunto">Asunto: </label>
-                <input id="asunto" type="text" placeholder="Ingresa el asunto" required>
+                <label  for="asunto">Asunto: </label>
+                <input  class="data" id="asunto" type="text" placeholder="Ingresa el asunto" required>
             </div>
             <div class="campo"> 
-                <label for="email">Email: </label>
-                <input id="email" type="email" placeholder="Ingresa tu email" required>
+                <label  for="email">Email: </label>
+                <input class="data" id="email" type="email" placeholder="Ingresa tu email" required>
             </div>
 
             <div class="campo">
-                <label for="tel">Telefono: </label>
-                <input id="tel" type="tel" placeholder="Ingresa tu numero de telefono">
+                <label  for="tel">Telefono: </label>
+                <input class="data" id="tel" type="tel" placeholder="Ingresa tu numero de telefono">
             </div>
 
-
-            <div class="campo"></div>
-                <label for="mensaje">Mensaje: </label>
-                <textarea rows="10" cols="20" >  </textarea>
+            <div class="campo">
+                <label  for="mensaje">Mensaje: </label>
+                <input class="data" id="mensaje" type="text" placeholder="Ingresa tu mensaje" required>
             </div>
             
         </fieldset>
@@ -83,13 +82,13 @@
                 <input id="proveedor" type="radio" name="tipo">
             </div>
             <div class="campo">
-                <label for="categoria">Categoria de Interes</label>
-                <input list="categorias" name="categorias">
-                <datalist id="categorias">
-                    <option value="Cocina"></option>
-                    <option value="Oficina"></option>
-                    <option value="Television"></option>
-                </datalist>
+                <label for="categoria">Categoría de Interés</label>
+                <select name="categoria" id="categoria" placeholder="--Seleccione--">
+                    <option value="Cocina">--Seleccione--</option>
+                    <option value="Cocina">Cocina</option>
+                    <option value="Oficina">Oficina</option>
+                    <option value="Television">Televisión</option>
+                </select>
             </div>
         </fieldset>
         <input class="btn"  type="submit" value="Enviar Formulario" >

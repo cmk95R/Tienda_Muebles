@@ -265,6 +265,135 @@ img{
 display: block;
 }
 
+/*************************MEDIA QUERYS************************************/
+@media (max-width: 768px) {
+    
+    .contenido-nosotros {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .texto-nosotros {
+        flex-basis: 50%,
+    }
+    .titulo-productos{
+        display: none;
+    }
+    .listado-productos{
+        padding: 10%;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    }
+
+
+
+@media (max-width: 1024px) {
+
+    .site-footer h3{
+        text-align: center;
+    }
+    .nav-principal {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nombre-sitio {
+        margin-top: 2rem;
+    }
+
+    .hero {
+        height: 40rem;
+    }
+
+    .listado-categoria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .listado-productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sobre-nosotros {
+        padding: 5rem 0;
+        background-size: 100%, 100rem;
+    }
+
+    .texto-nosotros {
+        
+        padding-left: 2rem;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+
+@media (max-width: 600px) {
+    .site-footer h3{
+        text-align: center;
+    }
+    .grid-footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    body {
+        font-size: 1.4rem; 
+    }
+
+    .nombre-sitio {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        height: 30rem;
+    }
+
+    .listado-categoria {
+        grid-template-columns: 1fr;
+    }
+
+
+    .texto-nosotros {
+        padding-left: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 0.8rem;
+    }
+
+    .site-footer {
+        padding-top: 3rem;
+    }
+
+    .copyright {
+        margin-top: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* SECCION NOSOTROS */
 
 .contenido-nosotros{
@@ -316,6 +445,15 @@ border: none;
     margin: auto;
 }
 
+@media (max-width: 768px) {
+    
+    .contenedor-blog{
+        display: flex;
+        flex-direction: column; 
+        padding: 10%;           
+        gap: 1.5rem; 
+    }   
+}
 
 /*SECCION GALERIA*/
 
@@ -333,6 +471,27 @@ border: none;
     height: 40rem;   
     object-fit: cover;
 }
+@media (max-width: 480px) {
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        padding: 10%;           
+        gap: 1.5rem; 
+    }   
+}
+
+@media (max-width: 768px) {
+    
+    .galeria{
+        grid-template-columns: repeat(2,1fr);
+        padding: 10%;           
+        gap: 1.5rem; 
+    }   
+}
+
+
+
+
 
 /*SECCION FORMULARIO*/
 
@@ -342,7 +501,7 @@ border: none;
 
 }
 .formulario fieldset{
-    border: 1px solid #000;
+    border: 1px solid #0083fe;
     margin-bottom: 2rem;
 }
 
@@ -362,12 +521,38 @@ border: none;
 }
 .campo label{
     flex-basis: 10rem;
-
+    width: 100%;
 }
-.campo input:not([type="radio"]),
-.campo textarea,
-.campo select   {
-    flex: 1;
-    border: 1px solid #e1e1e1;
-    padding: 1rem;
+.data {
+    width: 80%;
+}
+
+fieldset,  select, input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+
+fieldset:hover  select:hover, input:hover {
+    border-color: #5b9bd5;
+    box-shadow: 0 0 8px rgba(91, 155, 213, 0.5);
+}
+
+input::placeholder {
+    color: #999;
+}
+@media (max-width: 480px) {
+    .formulario{
+        padding: 10%;           
+        gap: 1.5rem; 
+    }   
+}
+
+@media (max-width: 768px) {
+    
 }
